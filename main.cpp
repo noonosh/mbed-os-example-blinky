@@ -68,7 +68,7 @@ int main() {
                     if (key == '#') {  // submit
                         if (strcmp(enteredPin, correctPin) == 0) {
                             printf("Access Granted. Door is unlocked for 10 seconds.\n");
-                            ThisThread::sleep_for(10000ms); // door remains unlocked for 10 seconds
+                            ThisThread::sleep_for(1000ms); // door remains unlocked for 10 seconds
                             printf("The door is now locked again. To unlock it, please enter the four-digit password and then press #.\n");
                         } else {
                             printf("Incorrect PIN. Please try again.\n");
